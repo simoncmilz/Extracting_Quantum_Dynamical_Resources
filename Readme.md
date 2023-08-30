@@ -96,7 +96,7 @@ Given a **Comb**, an initial environment state **Init_Env**, a number of slots *
 - [MODD/Dist_Unit_One_It.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Dist_Unit_One_It.m):
 Given a **Comb**, a number of slots **N**, a system dimension **dim**, an initial environment state **Init_Env**, and an **exitTolerance**, this function finds an ideal DD sequence (via minimization to the set of unitaries) and computes the resulting environment state.
 
-So far, it has mostly been tested for **N=3** and **dim=2**. Generalization to other parameters is straight forward but requires changes in all functions this function depends on.
+    So far, it has mostly been tested for **N=3** and **dim=2**. Generalization to other parameters is straight forward but requires changes in all functions    this function depends on.
 
 - [MODD/Eigenvalue_Opt_conc.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Eigenvalue_Opt_conc.m):
 Same as [MODD/Dist_Unit_Opt_conc.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Dist_Unit_Opt_conc.m) but optimization via maximization of the maximal eigenvalue of the resulting channel.
@@ -131,34 +131,34 @@ given a dimension **dim**, an unnormalized maximally entangled state of  dimensi
 - [PartTr.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/PartTr.m):
 given a state **rho**, an array **sys** and and array **dim**, this function performs the partial transpose of rho (defined on the systems with dimensions given in dim) over the systems given in sys. Code taken from Tony Cubitt's [homepage](https://www.dr-qubit.org/matlab.html).
 
-- [quantum_entr.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/quantum_entr.m)):
+- [quantum_entr.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/quantum_entr.m):
   Given a matrix **X** and optimization parameters **(m,k)** this function returns the von-Neumann entropy of X. m and k do not have to be specified explicitly. Based on https: *Semidefinite approximations of the matrix logarithm* by Hamza Fawzi, James Saunderson and Pablo A. Parrilo, [arXiv:1705.00812](https://arxiv.org/abs/1705.00812)
 
-- [quantum_rel_entr.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/quantum_rel_entr.m)):
+- [quantum_rel_entr.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/quantum_rel_entr.m):
 given two matrices **A** and **B** optimization parameters **(m,k)**, this function returns the quantum relative entropy between A and B. m and k do not have to be specified explicitly. Based on https: *Semidefinite approximations of the matrix logarithm* by Hamza Fawzi, James Saunderson and Pablo A. Parrilo, [arXiv:1705.00812](https://arxiv.org/abs/1705.00812)
 
-- [Rand_comb.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Rand_comb.m)):
+- [Rand_comb.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Rand_comb.m):
 given a number of slots **N**, a two-qubit Hamiltonian **Ham** and a step size delT, this function samples an initial two-qubit state and returns the resulting comb for the given Hamiltonian and additional Markovian noise (detailed in [arXiv:2110.02613](https://arxiv.org/abs/2110.02613)) and the step size. Currently, this function **only works for two-qubit Hamiltonians**.
 
-- [Rand_state.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Rand_state.m)):
+- [Rand_state.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Rand_state.m):
 given system size **n**, this function returns a random (according to Haar measure) pure quantum state.
 
-- [randU.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/randU.m)):
+- [randU.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/randU.m):
 given **n**, this function returns a random (according to Haar measure) n x n unitary. Code taken from Tony Cubitt's [homepage](https://www.dr-qubit.org/matlab.html).
 
-- [syspermute.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/syspermute.m)):
+- [syspermute.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/syspermute.m):
 given a matrix **p**, a permutation **perm** and dimensions of subsystems **dim**, this function returns a permutation of p (defined on susbsystems of dimensions given by dim) according to the permutation perm. Code taken from Tony Cubitt's [homepage](https://www.dr-qubit.org/matlab.html).
 
-- [TnProduct.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/TnProduct.m)):
+- [TnProduct.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/TnProduct.m):
 given a **list of input objects**, this function returns their tensor product. Code taken from Tony Cubitt's [homepage](https://www.dr-qubit.org/matlab.html).
 
-- [TrX.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/TrX.m)):
+- [TrX.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/TrX.m):
 given a matrix **p**, a list of systems **sys** and a list **dim** of subsystem dimensions, this function returns the partial trace of p (defined on subsystems wih dimensions given by dim) over the systems given by sys. Code taken from Tony Cubitt's [homepage](https://www.dr-qubit.org/matlab.html).
 
-- [chanconv.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/chanconv.m)):
+- [chanconv.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/chanconv.m):
 Given a matrix **E**, this function can change its representation by choosing **from** and **to** for the the represenation it is in and the one it is supposed to be transformed to. Code taken from Tony Cubitt's [homepage](https://www.dr-qubit.org/matlab.html).
 
-- [Rand_comb_Var_In.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Rand_comb_Var_In.m)):
+- [Rand_comb_Var_In.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Rand_comb_Var_In.m):
   Given a number of slots **N**, a Hamiltonian **N**, and a step size **delT**, this function returns an N-slot comb, built from the Hamiltonian and the noise model of arXiv:2110.02613 that has an open initial and final environment line.
 
   Currently only works for **d=2**, but extension to higher system dimensions is trivially possible.
@@ -212,7 +212,7 @@ Given a matrix **E**, this function can change its representation by choosing **
 
 **Op1, Op2, Op3**: Three optimal operations for the given run of the simulation
 
-- [DataFilesODD/DD_Operations_Optimized_eig.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Data/DD_Operations_Optimized_eig.txt):
+- [ODD/Data/DD_Operations_Optimized_eig.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Data/DD_Operations_Optimized_eig.txt):
  Same as [ODD/Data/DD_Operations_Optimized_unitary.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Data/DD_Operations_Optimized_unitary.txt), but for optimization of the maximum eigenvalue of the resulting channel. Created by [ODD/DD_Sequence_Print.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/DD_Sequence_Print.m).
 
 
@@ -250,10 +250,10 @@ Same as [MODD/Data/DD_Data_dist_unit_opt_Conc.txt](https://github.com/simoncmilz
 **Op1, ..., Op15**: 15 optimal operations for the given run of the simulation
 
 - [MODD/Data/DD_Operations_Optimized_eig_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Operations_Optimized_eig_Conc.txt):
-  Same as [DataFilesMODD/DD_Operations_Optimized_unitary_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Operations_Optimized_unitary_Conc.txt), but for optimization of the maximum eigenvalue of the resulting channel. Created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m).
+  Same as [MODD/Data/DD_Operations_Optimized_unitary_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Operations_Optimized_unitary_Conc.txt), but for optimization of the maximum eigenvalue of the resulting channel. Created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m).
 
 - [MODD/Data/DD_Operations_Optimized_Purity_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Operations_Optimized_Purity_Conc.txt):
-Same as [DataFilesMODD/DD_Operations_Optimized_unitary_Conc.txt](), but for optimization of the purity of the resulting channel (generated using an algorithm for purity maximization: J. Morris, *in preparation* (2023)).
+Same as [MODD/Data/DD_Operations_Optimized_unitary_Conc.txt](), but for optimization of the purity of the resulting channel (generated using an algorithm for purity maximization: J. Morris, *in preparation* (2023)).
 
 - [MODD/Data/DD_Hamiltonians_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Hamiltonians_Conc.txt):
   Text File containing the Hamiltonians used for the optimization of the DD sequences in MODD scenario. Created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m). Contains:
