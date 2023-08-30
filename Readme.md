@@ -10,9 +10,9 @@ All code is written in matlab (for the creation of the data) and python (for vis
 - [numpy](https://numpy.org/) - the fundamental package for scientific computing with Python
 - [matplotlib](https://matplotlib.org/) - a comprehensive library for creating static, animated, and interactive visualizations in Python.
 
-**TL;DR**: To plot the data for **ODD**, run ODD/Collect_Data_Python_Conform.py. In said file, the type of data that is to be plotted (purity or mutual information) can be chosen by changing the variable T=**Type**.
+**TL;DR**: To plot the data for **ODD**, run [ODD/Collect_Data_Python_Conform.py](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Collect_Data_Python_Conform.py). In said file, the type of data that is to be plotted (purity or mutual information) can be chosen by changing the variable T=**Type**.
 
-To plot the data for **MODD**, run MODD/Collect_Data_Python_Conform_Concatinaed.py. In said file, the type of data that is to be plotted (purity or mutual information) can be chosen by changing the variable T=**Type**.
+To plot the data for **MODD**, run [MODD/Collect_Data_Python_Conform_Concatinaed.py](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Collect_Data_Python_Conform_Concatinaed.py). In said file, the type of data that is to be plotted (purity or mutual information) can be chosen by changing the variable T=**Type**.
 
 
 ###### This repository consists of the following:
