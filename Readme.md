@@ -118,7 +118,7 @@ Given a two-qubit Lindbladian (in vectorized form) **Lindblad**, a qubit state *
 - [MODD/StandardSequence_Conc.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/StandardSequence_Conc.m):
 Given a Lindbladian **Lindblad**, an initial environment state **Init_Env** and a step size **delT**, this function returns the Purity and mutual information for the resulting channel of a 15 step comb if a standard DD sequence is employed (used as a baseline to compare DD protocols to).
 
-Currently only set up to work for **d=2**.
+    Currently only set up to work for **d=2**.
 
 - [MODD/Collect_Data_Python_Conform_Concatinaed.py](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Collect_Data_Python_Conform_Concatinaed.py):
 Python script that plots the data contained in the MODD/Data folder. Type of data to be plotted (options: 'Purity', 'MutInf') can be chosen by changing the variable **Type** in the script. 
@@ -208,9 +208,9 @@ Given a matrix **E**, this function can change its representation by choosing **
 - [ODD/Data/DD_Operations_Optimized_unitary.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Data/DD_Operations_Optimized_unitary.txt):
  Text File containing the optimized operations for DD Sequences, from minimization to the set of unitaries of the resulting channel. Created by [ODD/DD_Sequence_Print.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/DD_Sequence_Print.m). Contains:
 
-**Identifier**: Unique identifier to match sequence to run of simulation
+  **Identifier**: Unique identifier to match sequence to run of simulation
 
-**Op1, Op2, Op3**: Three optimal operations for the given run of the simulation
+  **Op1, Op2, Op3**: Three optimal operations for the given run of the simulation
 
 - [ODD/Data/DD_Operations_Optimized_eig.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Data/DD_Operations_Optimized_eig.txt):
  Same as [ODD/Data/DD_Operations_Optimized_unitary.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/Data/DD_Operations_Optimized_unitary.txt), but for optimization of the maximum eigenvalue of the resulting channel. Created by [ODD/DD_Sequence_Print.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/ODD/DD_Sequence_Print.m).
@@ -219,7 +219,6 @@ Given a matrix **E**, this function can change its representation by choosing **
 ###### MODD (multi-round optimization)
 
 - [MODD/Data/DD_Data_dist_unit_opt_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Data_dist_unit_opt_Conc.txt):
-  
 Text file containing data created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m) for multi-round round (i.e., 4 times three slots MODD optimization) via minimization of the distance to the unitaries. Contains the following columns:
 
   **Identifier**: Unique identifier for every line for easier further handling of the data 
@@ -245,9 +244,9 @@ Same as [MODD/Data/DD_Data_dist_unit_opt_Conc.txt](https://github.com/simoncmilz
 - [MODD/Data/DD_Operations_Optimized_unitary_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Operations_Optimized_unitary_Conc.txt):
   Text File containing the optimized operations for DD Sequences, from minimization to the set of unitaries of the resulting channel via MODD. Created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m). Contains:
 
-**Identifier**: Unique identifier to match sequence to run of simulation
+  **Identifier**: Unique identifier to match sequence to run of simulation
 
-**Op1, ..., Op15**: 15 optimal operations for the given run of the simulation
+  **Op1, ..., Op15**: 15 optimal operations for the given run of the simulation
 
 - [MODD/Data/DD_Operations_Optimized_eig_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Operations_Optimized_eig_Conc.txt):
   Same as [MODD/Data/DD_Operations_Optimized_unitary_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Operations_Optimized_unitary_Conc.txt), but for optimization of the maximum eigenvalue of the resulting channel. Created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m).
@@ -264,9 +263,10 @@ Same as [MODD/Data/DD_Operations_Optimized_unitary_Conc.txt](), but for optimiza
 
 - [MODD/Data/DD_Lindbladians_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Lindbladians_Conc.txt):
 Text File containing the Lindbladians used for the optimization of the DD sequences in MODD scenario. Created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m). Contains:
-**Identifier**: Unique identifier to match Hamiltonian to run of simulation
 
-**Hamiltonian**: 16x16 Lindbladian in vectorized form.
+  **Identifier**: Unique identifier to match Hamiltonian to run of simulation
+
+  **Hamiltonian**: 16x16 Lindbladian in vectorized form.
 
 - [MODD/Data/DD_Init_States_Conc.txt](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/Data/DD_Init_States_Conc.txt):
 Text File containing the initial states used for the optimization of the DD sequences. Created by [MODD/DD_Sequence_Print_Concatenated.m](https://github.com/simoncmilz/Extracting_Quantum_Dynamical_Resources/blob/main/MODD/DD_Sequence_Print_Concatenated.m). Contains:
